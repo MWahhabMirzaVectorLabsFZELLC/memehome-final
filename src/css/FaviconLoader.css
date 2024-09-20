@@ -1,0 +1,22 @@
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+  }
+  
+  .favicon-loader {
+    width: 80px;
+    height: 80px;
+    animation: blink 2s infinite; /* Slow blinking animation */
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1; /* Full opacity */
+    }
+    50% {
+      opacity: 0.2; /* Reduced opacity for blink effect */
+    }
+  }
+  
