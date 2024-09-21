@@ -442,7 +442,7 @@ if (window.ethereum) {
             "type": "function"
         }
     ];
-    const contractAddress = '0xCCa004702D415a5c643A30b10E088cedE9421819';
+    const contractAddress = '0x740bAfA58E1F27EA3D07b755C06947f2A3db3A86';
 	contract = new web3.eth.Contract(contractABI, contractAddress);
 } else {
 	console.error('No Ethereum provider found. Install MetaMask or another wallet.');
