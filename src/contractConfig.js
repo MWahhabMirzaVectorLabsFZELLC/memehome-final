@@ -442,7 +442,7 @@ const baseNetworkRpcUrl = 'https://sepolia.base.org';
 		"type": "function"
 	}
 ];
-    const contractAddress = '0x740bAfA58E1F27EA3D07b755C06947f2A3db3A86';
+    const contractAddress = '0x0f5cd4dac4bD67fdDC6B353aeda2481f8649fDfb';
 web3 = new Web3(new Web3.providers.HttpProvider(baseNetworkRpcUrl));
 
 contract2 = new web3.eth.Contract(contractABI, contractAddress);
