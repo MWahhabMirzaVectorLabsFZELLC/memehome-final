@@ -3,10 +3,12 @@ import { fetchEthToUsdRate } from "./FetchEthToUsdRate";
 
 export const fetchTokenPrice = async (tokenName) => {
 	try {
-		const currentPriceGwei = await contract2.methods
+		const currentPriceWei = await contract2.methods
 			.calculateTokenPrice(tokenName)
 			.call();
-		const ethAmount = Number(currentPriceGwei) / 1e18;
+			console.log(currentPriceWei)
+		const ethAmount = Number(currentPriceWei) / 1e18;
+		// console.log(ethAmount)
 		const ethToUsdRate = await fetchEthToUsdRate();
 		const pricePerTokenUsd = (ethAmount * ethToUsdRate).toFixed(8);
 		return pricePerTokenUsd;
