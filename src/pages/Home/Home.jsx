@@ -31,6 +31,7 @@ const Home = () => {
       const currentPriceGwei = BigInt(
         await contract2.methods.calculateTokenPrice(tokenName).call()
       );
+console.log(currentPriceGwei)
 
       const marketCapGwei = initialSupply * currentPriceGwei;
       const marketCapEther = Number(marketCapGwei) / 1e18;
