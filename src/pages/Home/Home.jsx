@@ -34,7 +34,7 @@ const Home = () => {
 console.log(currentPriceGwei)
 
       const marketCapGwei = initialSupply * currentPriceGwei;
-      const marketCapEther = Number(marketCapGwei) / 1e18;
+      const marketCapEther = Number(marketCapGwei) / 1e21;
       const marketCapUsd = marketCapEther * ethToUsdRate;
 
       return marketCapUsd.toLocaleString("en-US", {
