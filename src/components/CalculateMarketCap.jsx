@@ -1,14 +1,14 @@
-import { contract } from "../web3Config";
+import { contract2 } from "../contractConfig";
 
 export const calculateMarketCap = async (tokenName, ethToUsdRate) => {
 	try {
 		const initialSupply = BigInt(1e9);
 		const currentPriceGwei = BigInt(
-			await contract.methods.calculateTokenPrice(tokenName).call()
+			await contract2.methods.calculateTokenPrice(tokenName).call()
 		);
 
 		const marketCapGwei = initialSupply * currentPriceGwei;
-		const marketCapEther = Number(marketCapGwei) / 1e21;
+		const marketCapEther = Number(marketCapGwei) / 1e22;
 		const marketCapUsd = marketCapEther * ethToUsdRate;
 
 		return marketCapUsd.toFixed(2);
