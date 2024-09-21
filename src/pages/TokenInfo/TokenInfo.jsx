@@ -43,6 +43,7 @@ const TokenInfo = () => {
           const marketCap = await calculateMarketCap(tokenName, ethToUsdRate);
  console.log(marketCap)
           const price = await fetchTokenPrice(tokenName);
+console.log(price)
 
           setRemainingPercentage(`${remaining}%`);
           setMarketCapUsd(marketCap);
