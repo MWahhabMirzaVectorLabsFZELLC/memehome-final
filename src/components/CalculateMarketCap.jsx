@@ -8,7 +8,7 @@ export const calculateMarketCap = async (tokenName, ethToUsdRate) => {
 		);
 
 		const marketCapGwei = initialSupply * currentPriceGwei;
-		const marketCapEther = Number(marketCapGwei) / 1e18;
+		const marketCapEther = Number(marketCapGwei) / 1e21;
 		const marketCapUsd = marketCapEther * ethToUsdRate;
 
 		return marketCapUsd.toFixed(2);
