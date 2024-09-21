@@ -1,9 +1,9 @@
-import { contract } from "../web3Config";
+import { contract2 } from "../contractConfig";
 import { fetchEthToUsdRate } from "./FetchEthToUsdRate";
 
 export const fetchTokenPrice = async (tokenName) => {
 	try {
-		const currentPriceGwei = await contract.methods
+		const currentPriceGwei = await contract2.methods
 			.calculateTokenPrice(tokenName)
 			.call();
 		const ethAmount = Number(currentPriceGwei) / 1e18;
