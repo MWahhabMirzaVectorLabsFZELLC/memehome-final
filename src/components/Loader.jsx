@@ -4,7 +4,7 @@ import '../css/FaviconLoader.css'; // Import the CSS file
 const FaviconLoader = () => {
   return (
     <div className="loader-container">
-      <img src="../../public/favicon.svg" alt="Loading..." className="favicon-loader" />
+      <img src="../../public/loader.png" alt="Loading..." className="favicon-loader" />
     </div>
   );
 };
