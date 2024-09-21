@@ -6,7 +6,7 @@ let contract2;
 // https://mainnet.base.org
 const baseNetworkRpcUrl = 'https://sepolia.base.org';
 
- const contractABI = [
+ const contractABI =[
 	{
 		"inputs": [
 			{
