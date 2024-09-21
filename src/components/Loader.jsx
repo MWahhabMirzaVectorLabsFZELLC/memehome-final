@@ -1,32 +1,15 @@
-
-import '../css/FaviconLoader.css'; // Import the CSS file
+import "../css/FaviconLoader.css"; // Import the CSS file
 
 const FaviconLoader = () => {
   return (
     <div className="loader-container">
-      <img src="../../public/loader.png" alt="Loading..." className="favicon-loader" />
+      <span className="loader"></span>
+      {/* <div style=""></div> */}
     </div>
   );
 };
 
 export default FaviconLoader;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import HashLoader from "react-spinners/HashLoader";
 
