@@ -41,6 +41,7 @@ const TokenInfo = () => {
           const remaining = await contract2.methods.getRemainingTokensPercentage(tokenName).call();
           const ethToUsdRate = await fetchEthToUsdRate();
           const marketCap = await calculateMarketCap(tokenName, ethToUsdRate);
+ console.log(marketCap)
           const price = await fetchTokenPrice(tokenName);
 
           setRemainingPercentage(`${remaining}%`);
