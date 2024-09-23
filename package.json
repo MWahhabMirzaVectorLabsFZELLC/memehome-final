@@ -2,7 +2,7 @@
   "name": "coinflare",
   "homepage": "http://memehome.io/",
   "private": true,
-  "version": "0.0.1",  // Updated version for clarity
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
