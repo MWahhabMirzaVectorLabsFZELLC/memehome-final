@@ -1,8 +1,8 @@
 {
-  "name": "coinflare",
+  "name": "memehome",
   "homepage": "http://memehome.io/",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
